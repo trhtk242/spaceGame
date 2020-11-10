@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Calling to the style of the page.-->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!--Calling to the library sweetalert2.-->
+    <link href="./lib/css/sweetAlert.css" rel="stylesheet">
+    <script src="./lib/js/sweetAlert.js"></script>
+
+    <title>Space game</title>
+</head>
+<body>
+    <!--The canvas that we'll draw on it.-->
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.querySelector('#canvas');//The canvas.
+        const ctx = canvas.getContext('2d');//The context between the js and the canvas.
+
+        canvas.width = innerWidth/3;
+        canvas.height = innerHeight-20;
+
+        //Instructions alert.
+        Swal.fire({
+            title: '<h1>How to play?</h1>',
+            width:canvas.width,
+            html:
+            `<div class="swal">
+                <h2>Moving</h2>
+                <ul>
+                    <li>To move right press D</li>
+                    <li>To move left press A</li>
+                </ul>
+                <h2>Fire</h2>
+                <ul>
+                    <li>To shoot a rocket press H</li>
+                    <li>To shoot two rockets press J</li>
+                    <li>To shoot a space-ball press K</li>
+                </ul>
+            </div>`
+        }).then(()=>setting.swal = false);
+
+        const setting = {
+            score:0,
+            frame:0,
+            speedGame:40,  //The game will be updated every 40 ms.
+            didBosscome:false,
+            swal:true,
+            win:false
+        }
+        
+        let player;//This is the player.
+        let enemyBoss;//This is the boss.
+
+
+
+        //This function gets min and max and returns a random number between them.
+        Math.randomBetween = (min,max) => {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        
+    </script>
+    <!--Calling to the js of the game.-->
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/events.js"></script>
+</body>
+</html>

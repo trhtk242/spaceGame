@@ -1,0 +1,21 @@
+/*The style of the page*/
+html{
+    background-color: #000023;
+}
+
+/*The style of the canvas*/
+#canvas{
+    position: absolute;
+    left: 33%;
+    /*background-color: #000023;*/
+    background-image: url('../img/back.jpg');
+}
+/*The style of the alerts*/
+.swal{
+    max-height:450px;
+    font-size: 20px;  
+}
+
+.swal h1{
+    font-size: 50px;    
+}
