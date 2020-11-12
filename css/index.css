@@ -6,7 +6,7 @@ html{
 /*The style of the canvas*/
 #canvas{
     position: absolute;
-    left: 33%;
+    left: 30%;
     /*background-color: #000023;*/
     background-image: url('../img/back.jpg');
 }
