@@ -90,4 +90,12 @@ export default {
         type:'cannonEnemy2'
 
     },
+    explosion:{
+        x:0,
+        y:0,
+        width:180,
+        height:180,
+        img:'../img/explosion.png',
+        type:'explosion'
+    }
 }

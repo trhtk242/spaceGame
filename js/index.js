@@ -7,6 +7,7 @@ import Enemy from './classes/enemy.js';
 import Gift from './classes/gift.js';
 import Cannon from './classes/cannon.js';
 import Sprites from './sprites.js'
+import Explosion from './classes/explosion.js';
 
 //The function starts the game
 function start(){
@@ -151,5 +152,8 @@ const loopGame = setInterval(()=>{
     })
     Rocket.array.forEach(rocket => {
         rocket.update()
+    })
+    Explosion.array.forEach(explosion => {
+        explosion.update()
     })
 },setting.speedGame)

@@ -2,7 +2,9 @@
 //The asteroid can move and die
 //The asteroid class extends from the entity class.
 
-import Entity from './entity.js'
+import Entity from './entity.js';
+import Sprites from '../sprites.js';
+import Explosion from './explosion.js';
 
 export default class Asteroid extends Entity{
     constructor(x,y,width,height,sprite,spdX,spdY){
@@ -13,6 +15,7 @@ export default class Asteroid extends Entity{
     }
 
     delete(){
+        Explosion.create(this,Sprites.explosion);
         delete Asteroid.array[this.id]
     }
     

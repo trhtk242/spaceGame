@@ -6,6 +6,7 @@ import Entity from './entity.js'
 import Sprites from '../sprites.js'
 import Rocket from './rocket.js'
 import Cannon from './cannon.js'
+import Explosion from './explosion.js';
 
 
 export default class Enemy extends Entity{
@@ -21,6 +22,7 @@ export default class Enemy extends Entity{
     }
 
     delete(){
+        Explosion.create(this,Sprites.explosion)
         delete Enemy.array[this.id]
     }
     
@@ -137,7 +139,9 @@ Enemy.bossCreate = (sprite) =>{
         newEnemy.cannon(Sprites.cannonEnemy2,'right')
         newEnemy.type = 'bossEnemy'
         newEnemy.delete = () => {
-            setting.win = true;
+            setTimeout(()=>setting.win = true,700)
+            
+            Explosion.create(newEnemy,Sprites.explosion)
             delete Enemy.array[newEnemy.id]
         }
         Enemy.array.push(newEnemy)
