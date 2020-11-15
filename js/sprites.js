@@ -2,100 +2,100 @@
 
 export default {
     playerShip:{
-        x:745,
-        y:67,
+        x:6,
+        y:6,
         width:188,
         height:131,
-        img:'../img/index.png'
+        img:'../img/main.png'
 
     },
     miniRocket:{
-        x:906,
-        y:606,
+        x:361,
+        y:52,
         width:20,
         height:71,
-        img:'../img/index.png'
+        img:'../img/main.png'
 
     },
     rocket:{
-        x:851,
-        y:567,
+        x:306,
+        y:13,
         width:41,
         height:129,
-        img:'../img/index.png'
+        img:'../img/main.png'
     },
     circleRocket:{
-        x:530,
-        y:718,
+        x:775,
+        y:189,
         width:70,
         height:68,
-        img:'../img/index.png',
+        img:'../img/main.png',
         type:'circleRocket'
     },
     asteroid:{
-        x:191,
-        y:732,
+        x:697,
+        y:193,
         width:61,
         height:60,
-        img:'../img/index.png'
+        img:'../img/main.png'
     },
     gift:{
-        x:447,
-        y:99,
+        x:865,
+        y:193,
         width:68,
         height:63,
-        img:'../img/index.png',
+        img:'../img/main.png',
         type:'gift'
     },
     miniShipEnemy:{
-        x:297,
-        y:474,
+        x:564,
+        y:186,
         width:122,
         height:127,
-        img:'../img/enemy.png',
+        img:'../img/main.png',
         type:'miniShipEnemy'
     },
     shipEnemy:{
-        x:430,
-        y:474,
+        x:765,
+        y:8,
         width:200,
         height:151,
-        img:'../img/enemy.png',
+        img:'../img/main.png',
         type:'shipEnemy'
     },
     miniRocketEnemy:{
-        x:111,
-        y:485,
+        x:375,
+        y:191,
         width:21,
         height:72,
-        img:'../img/enemy.png',
+        img:'../img/main.png',
         type:'miniRocketEnemy'
 
     },
     cannonEnemy1:{
-        x:157,
-        y:259,
+        x:8,
+        y:174,
         width:68,
         height:126,
-        img:'../img/enemy.png',
+        img:'../img/main.png',
         type:'cannonEnemy1'
 
     },
     cannonEnemy2:{
-        x:251,
-        y:258,
+        x:102,
+        y:173,
         width:68,
         height:117,
-        img:'../img/enemy.png',
+        img:'../img/main.png',
         type:'cannonEnemy2'
 
     },
     explosion:{
-        x:0,
-        y:0,
+        x:316,
+        y:316,
         width:180,
         height:180,
-        img:'../img/explosion.png',
+        img:'../img/main.png',
         type:'explosion'
     }
 }
