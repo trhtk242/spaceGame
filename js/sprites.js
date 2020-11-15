@@ -6,7 +6,7 @@ export default {
         y:6,
         width:188,
         height:131,
-        img:'../img/main.png'
+        img:'../img/img.png'
 
     },
     miniRocket:{
@@ -14,7 +14,7 @@ export default {
         y:52,
         width:20,
         height:71,
-        img:'../img/main.png'
+        img:'../img/img.png'
 
     },
     rocket:{
@@ -22,14 +22,14 @@ export default {
         y:13,
         width:41,
         height:129,
-        img:'../img/main.png'
+        img:'../img/img.png'
     },
     circleRocket:{
         x:775,
         y:189,
         width:70,
         height:68,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'circleRocket'
     },
     asteroid:{
@@ -37,14 +37,14 @@ export default {
         y:193,
         width:61,
         height:60,
-        img:'../img/main.png'
+        img:'../img/img.png'
     },
     gift:{
         x:865,
         y:193,
         width:68,
         height:63,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'gift'
     },
     miniShipEnemy:{
@@ -52,7 +52,7 @@ export default {
         y:186,
         width:122,
         height:127,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'miniShipEnemy'
     },
     shipEnemy:{
@@ -60,7 +60,7 @@ export default {
         y:8,
         width:200,
         height:151,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'shipEnemy'
     },
     miniRocketEnemy:{
@@ -68,7 +68,7 @@ export default {
         y:191,
         width:21,
         height:72,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'miniRocketEnemy'
 
     },
@@ -77,7 +77,7 @@ export default {
         y:174,
         width:68,
         height:126,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'cannonEnemy1'
 
     },
@@ -86,7 +86,7 @@ export default {
         y:173,
         width:68,
         height:117,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'cannonEnemy2'
 
     },
@@ -95,7 +95,7 @@ export default {
         y:316,
         width:180,
         height:180,
-        img:'../img/main.png',
+        img:'../img/img.png',
         type:'explosion'
     }
 }
